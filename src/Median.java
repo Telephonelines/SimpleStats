@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class Median {
-	public static void median(int[] numbers) {
+	public static double median(int[] numbers) {
 		Arrays.sort(numbers);
 		int middle = 0;
 		double median = 0;
@@ -13,11 +13,11 @@ public class Median {
 			middle = numbers.length / 2;
 			median = ((double) numbers[middle] + (double) numbers[middle - 1]) / 2;
 		}
-		System.out.println("Median is: " + median);
+		return median;
 	}
 
 	public static void main(String[] args) {
-		int[] numbers = {1,3,6,7,8,7};
+		int[] numbers = {1,3,6,7,8,7, 7, 9};
 
 		median(numbers);
 	}

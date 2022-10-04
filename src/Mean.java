@@ -11,7 +11,7 @@ public class Mean {
 	}
 
 	public static void main(String[] args) {
-		int[] numbers = {4,5,6,4,6};
+		int[] numbers = {1,3,6,7,8,7, 7, 9};
 		System.out.println("Average: " + mean(numbers));
 	}
 }
